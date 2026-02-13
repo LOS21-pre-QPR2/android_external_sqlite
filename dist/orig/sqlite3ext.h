@@ -692,7 +692,7 @@ typedef int (*sqlite3_loadext_entry)(
 #endif /* !defined(SQLITE_CORE) && !defined(SQLITE_OMIT_LOAD_EXTENSION) */
 
 #if !defined(SQLITE_CORE) && !defined(SQLITE_OMIT_LOAD_EXTENSION)
-  /* This case when the file really is being compiled as a loadable
+  /* This case when the file really is being compiled as a loadable 
   ** extension */
 # define SQLITE_EXTENSION_INIT1     const sqlite3_api_routines *sqlite3_api=0;
 # define SQLITE_EXTENSION_INIT2(v)  sqlite3_api=v;
